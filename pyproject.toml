@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mf-optimal-execution"
+version = "1.0.0"
+description = "Mean-Field Optimal Execution and Deep Learning methods."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Ryan Timeus" }]
+dependencies = [
+  "torch>=2.5",
+  "numpy>=2.0",
+  "matplotlib>=3.8",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mf_optimal_execution*"]
