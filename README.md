@@ -33,9 +33,11 @@ Each method is benchmarked against closed-form solutions, and the framework prov
 In the optimal execution problem, an agent seeks to liquidate (or acquire) a position over a fixed horizon $[0,T]$ while accounting for price impact and inventory risk.
 
 The state dynamics are typically modeled as:
-$$
+
+```math
     dX_t = \alpha_t dt + \sigma dW_t
-$$
+```
+
 where:
 
 - $\alpha_t$ is the trading rate (control),
@@ -43,13 +45,14 @@ where:
 - $W_t$ is a Brownian motion.
 
 The objective is to minimize a cost functional of the form:
-$$
-    J(\alpha) = \mathbb{E}\Bigg[\int_0^T \Big(
-        \frac{c_X}{2} X_t^2
-        + \frac{c_\alpha}{2} \alpha_t^2
-        - \gamma X_t \int_{\mathbb{R}} a \, \nu_t(da)
-    \Big) dt + \frac{c_g}{2} X_T^2 \Bigg].
-$$
+
+```math
+J(\alpha) = \mathbb{E}\Bigg[\int_0^T \Big(
+    \frac{c_X}{2} X_t^2
+    + \frac{c_\alpha}{2} \alpha_t^2
+    - \gamma X_t \int_{\mathbb{R}} a \, \nu_t(da)
+\Big) dt + \frac{c_g}{2} X_T^2 \Bigg].
+```
 
 For a complete derivation, theoretical background, and detailed discussion, see the accompanying [**Memoir**](Memoir.pdf), which contains the full research text associated with this repository.
 
