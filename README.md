@@ -15,7 +15,7 @@ The mean-field formulation overcomes the curse of dimensionality inherent in the
 
 ## Overview
 
-`mf-optimal-execution` is a research framework and codebase developed as part of my **research memoir** at CEREMADE, on deep learning methods for **Mean-Field Control (MFC)** and **Mean-Field Game (MFG)** formulations of the **optimal execution** problem under **price impact**.
+`mf-optimal-execution` is a research framework and codebase developed as part of my **research memoir** at Paris Dauphine-PSL under the supervision of [Julien Claisse](https://www.ceremade.dauphine.fr/fr/membres/detail-cv/profile/julien-claisse.html), on deep learning methods for **Mean-Field Control (MFC)** and **Mean-Field Game (MFG)** formulations of the **optimal execution** problem under **price impact**.
 The full memoir is included in this repository for reference.
 
 This project implements and compares a variety of modern solution techniques, both classical and deep-learning based:
